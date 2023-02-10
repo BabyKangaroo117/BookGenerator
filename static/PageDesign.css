@@ -1,33 +1,41 @@
-.image {
-    opacity: 0.65;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    z-index: -1;
+body {
+    background-color: blue;
+
 }
 
-.text_block{
-    top: 100px;
-    left: 175px;
-    height: 500px;
-    width: 800px;
-    position: absolute;
+.image {
+    margin-top: 300px;
+
+    height: 50vh;
+    width: 40vw;
 }
 
 .text {
+    margin: 50px 50px 50px 50px;
     font-family: "Prata";
     font-weight: bold;
     font-size: 50px;
 }
-.previous-page {
-    z-index = 2;
-    text-align: left;
-    padding-top: 30%;
+.main-body {
+    position: absolute;
+}
+
+.buttons{
+    z-index: 2;
+    position: absolute;
+    top: 50%;
 }
 
 .next-page {
-    z-index = 2;
-    text-align: right;
-    padding-top: 30%;
+    z-index: 2;
+
+    position: absolute;
+    top: 50%;
+    left: 98%;
+}
+.previous-page {
+    z-index: 2;
+    text-align: left;
+    position: absolute;
+    top: 50%;
 }

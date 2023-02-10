@@ -5,7 +5,7 @@ from nltk.corpus import wordnet
 
 class ApiTextGeneration:
 
-
+    os.environ["api_key"] = "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"
     openai.api_key = os.getenv("api_key")
 
     def __init__(self):
@@ -77,7 +77,7 @@ class ApiTextGeneration:
         for text in story_text:
             # image_prompt = self.__generate_image_prompt(text)
 
-            image_urls.append(self.__image_generation("A digital image of" + text))
+            image_urls.append(self.__image_generation("A digital image of " + text))
 
         self.image_urls = image_urls
 
