@@ -5,7 +5,7 @@ from nltk.corpus import wordnet
 
 class ApiTextGeneration:
 
-    os.environ["api_key"] = "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"
+
     openai.api_key = os.getenv("api_key")
 
     def __init__(self):
