@@ -1,0 +1,33 @@
+.image {
+    opacity: 0.65;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+}
+
+.text_block{
+    top: 100px;
+    left: 175px;
+    height: 500px;
+    width: 800px;
+    position: absolute;
+}
+
+.text {
+    font-family: "Prata";
+    font-weight: bold;
+    font-size: 50px;
+}
+.previous-page {
+    z-index = 2;
+    text-align: left;
+    padding-top: 30%;
+}
+
+.next-page {
+    z-index = 2;
+    text-align: right;
+    padding-top: 30%;
+}

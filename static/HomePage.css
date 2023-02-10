@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+
+}
+
+#story-example {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+#title {
+    background-color: lightblue;
+    padding: 100px 50px;
+
+}
+#description {
+    text-align: center;
+}
+
+#enter-book-description {
+    background-color: #B6E2A1;
+    text-align: center;
+}
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+.top-cloud {
+    position: relative;
+    width: 200px;
+    left: 1000px;
+}
+.bottom-cloud {
+    position: relative;
+    left: 250px;
+}
+
+.book-form {
+    text-align: center;
+    border-radius: 20%;
+
+}
+.generate-book-btn {
+    padding: 10px;
+    text-align: center;
+
+}
+
+.example-prompt {
+    text-align: center;
+    font-style: italic;
+    padding-top: 100px;
+}
