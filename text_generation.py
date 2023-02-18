@@ -48,20 +48,21 @@ class ApiTextGeneration:
 
         self.story = story
 
-    def __generate_image_prompt(self, text):
-        image_prompt_lst = ["A drawing of", "insert noun", "insert noun"]
-        word_list = text.split(" ")
-        lexnames = []
-        for word in word_list:
-            syns = wordnet.synsets(word)
-            lexnames.append([word, syns[0].lexname()] if syns else [word, None])
-        for lexname in lexnames:
-            if lexname[1] == "noun.quantity":
-                image_prompt_lst[1] = lexname[0]
-            elif lexname[1] == "noun.animal":
-                image_prompt_lst[2] = lexname[0]
-        image_prompt = " ".join(image_prompt_lst)
-        return image_prompt
+    # Working on a potential algorithm to create better image prompts
+    # def __generate_image_prompt(self, text):
+    #     image_prompt_lst = ["A drawing of", "insert noun", "insert noun"]
+    #     word_list = text.split(" ")
+    #     lexnames = []
+    #     for word in word_list:
+    #         syns = wordnet.synsets(word)
+    #         lexnames.append([word, syns[0].lexname()] if syns else [word, None])
+    #     for lexname in lexnames:
+    #         if lexname[1] == "noun.quantity":
+    #             image_prompt_lst[1] = lexname[0]
+    #         elif lexname[1] == "noun.animal":
+    #             image_prompt_lst[2] = lexname[0]
+    #     image_prompt = " ".join(image_prompt_lst)
+    #     return image_prompt
 
     def __image_generation(self, image_prompt):
         """Generates an image url from a given prompt"""
