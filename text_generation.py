@@ -1,12 +1,14 @@
 import os
 import openai
+from dotenv import load_dotenv
 from nltk.corpus import wordnet
+
+load_dotenv()
+API_KEY = os.getenv("API_KEY")
 
 
 class ApiTextGeneration:
-
-    os.environ["api_key"] = "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"
-    openai.api_key = os.getenv("api_key")
+    openai.api_key = API_KEY
 
     def __init__(self):
         self.story = None
